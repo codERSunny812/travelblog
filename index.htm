@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+<!-- bootstrap css end HERE -->
+    <title>Chasing horizons</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Chasing horizons</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us </a>
+            </li>
+            <!-- drop down feature start from here  -->
+
+
+
+            <!-- <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a> -->
+              <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li> --> 
+
+
+
+
+            <!-- drop down feature end here  -->
+
+            <!-- contact with us start from here  -->
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.htm" target="_blank">Contact us </a>
+            </li>
+          </ul>
+          <!-- contact with us end here  -->
+
+
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form> 
+      <div class="mx-2">
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal" >login</button>
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal" >signup</button>
+
+      </div>
+   
+    </nav>  
+<!-- login  Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to your horizons account </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- form tag start from here  -->
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Enter your Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Enter your Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+          <fieldset class="row mb-3">
+            <legend class="col-form-label col-sm-2 pt-0">Do you know about this website </legend>
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                <label class="form-check-label" for="gridRadios1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Check the box to continue 
+                </label>
+              </div>
+            </div>
+          </div>
+         
+        </form>
+        <!-- form tag end  here  -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary"> login  in</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- login modal end here  -->
+
+<!--  signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Create your horizons account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- form tag start from here for signup  -->
+        <form class="row g-3">
+          <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefault02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
+          </div>
+          <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">Username</label>
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroupPrepend2">@</span>
+              <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault03" class="form-label">Email</label>
+            <input type="text" class="form-control" id="validationDefault03" required>
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault04" class="form-label">State</label>
+            <select class="form-select" id="validationDefault04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="validationDefault05" class="form-label">Pin code </label>
+            <input type="text" class="form-control" id="validationDefault05" required>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+              <label class="form-check-label" for="invalidCheck2">
+                Agree to terms and conditions
+              </label>
+            </div>
+          </div>
+        </form>
+        <!-- form tag for singup modal end here  -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button class="btn btn-primary" type="submit">Sign in </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- signup module end here  -->
+
+
+    <!-- carousel start from here  -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+      </div>
+      <div class="carousel-inner carousel slide carousel-fade">
+        <div class="carousel-item active">
+          <img
+            src="/images/kyran-low-MvkLKGtBcUA-unsplash.jpg"
+            class="d-block w-100"
+             height="800"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h3 style="color: black;">KERALA  BACKWATERS, ALAPPUZHA,INDIA </h3>
+            <p style="color: darkgoldenrod;">
+              I was on a boat travelling down the backwaters of Kerala watching
+              kids playing in the river when I spotted this hard working
+              gentleman. He seemed to be happy as larry.
+            </p>
+            <button type="button" class="btn btn-success">Travel</button>
+          <button type="button" class="btn btn-danger">Explore </button>
+         <button type="button" class="btn btn-warning">Enjoy </button>
+          </div>
+        </div>
+        <div class="carousel-item carousel slide carousel-fade">
+          <img
+            src="/images/martin-jernberg-nE2gf1scItI-unsplash.jpg"
+            class="d-block w-100"  height="800"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: black;">KOLKATA , INDIA </h5>
+            <p style="color: darkgoldenrod;">SUNSET IN THE CITY OF JOY</p>
+            
+          </div>
+        </div>
+        <div class="carousel-item carousel slide carousel-fade">
+          <img
+            src="/images/aditya-siva-HlQi14Q_iO0-unsplash.jpg"
+            class="d-block w-100" height="800"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: black;">CHANDRASHILA, TUNGNATH, INDIA</h5>
+            <p style="color: aliceblue;">CHANDRASHILA IS THE SUMMIT ABOVE TUNGNATH TEMPLE. IT LITERALLY MEANS "MOON ROCK".
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item carousel slide carousel-fade">
+          <img
+            src="/images/hawa mahal .jpg"
+            class="d-block w-100"  height="800"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: black;">HAWA MAHAL , INDIA </h5>
+            <p style="color: darkgoldenrod;">The Hawa Mahal is a palace in the city of Jaipur, India. Built from red and pink sandstone, it is on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's chambers</p>
+            
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- carousel end here  -->
+
+
+
+
+
+
+
+    <!-- REVIEW OF THE PLACES START FROM HERE  -->
+     
+
+     <!-- review of the First place   -->
+
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">INDIA</strong>
+              <h3 class="mb-0">AMRITSAR</h3>
+              <div class="mb-1 text-muted"> 12 NOV 2014</div>
+              <p class="card-text mb-auto">The Golden Temple (also known as the Harmandir Sahib).The the temple was completed by the fourth Sikh Guru, Guru Ram Das, in 1577.The Gurdwara was repeatedly rebuilt by the Sikhs after it became a target of persecution and was destroyed several times by the Mughal and invading Afghan armies. Maharaja Ranjit Singh, after founding the Sikh Empire, rebuilt it in marble and copper in 1809, and overlaid the sanctum with gold leaf in 1830..</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/amristar/prerna-sharma-Lw9WQY9ETVU-unsplash.jpg" class="bd-placeholder-img" width="200" height="400">
+            <!-- <title>Placeholder</title><rect width="79%" height="80%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text> -->
+    
+            </div>
+          </div>
+        </div>
+
+<!-- review of the first place end here  -->
+
+
+        <!-- review of the second place  -->
+
+
+
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">INDIA </strong>
+              <h3 class="mb-0">CHITTORGARH</h3>
+              <div class="mb-1 text-muted">21 JAN 2017 </div>
+              <p class="mb-auto">The Chittorgarh Fort also known as Chittorgarh or Chittor Fort is one of the largest forts in India.The fort was the capital of Mewar and is located in the present-day town of Chittorgarh.he fort covers 65 historic structures, which include four palaces, 19 arge temples, 20 large water bodies, 4 memorials and a few victory towers.The fort that once boasted of 84 water bodies has only 22 of them now. </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/chittorgarh/vitaliy-zamedyanskiy-nF1g2jQ3Uyw-unsplash.jpg" class="bd-placeholder-img" width="200" height="410">
+            
+              <!-- <title>Placeholder</title><rect width="79%" height="80%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text> -->
+   
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- review of the second place end here    -->
+    
+
+   <!-- review of the third place start from  here  -->
+
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">INDIA</strong>
+              <h3 class="mb-0">PUSHKAR</h3>
+              <div class="mb-1 text-muted"> 15 OCT 2016 </div>
+              <p class="card-text mb-auto">Pushkar is a city in the Ajmer district in the Indian state of Rajasthan.It is a pilgrimage site for Hindus and Sikhs. Pushkar has many temples. Most of the temples and ghats in Pushkar are from the 18th century and later, because many temples were destroyed during Muslim conquests in the area.Subsequently, the destroyed temples were rebuilt. </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/PUSHKAR/gaurav-gupta-uHS8BkpxASo-unsplash.jpg" class="bd-placeholder-img" width="200" height="350">
+            
+     
+     
+     
+            <!-- review of the third place end here  -->
+
+
+ <!-- review of the fourth start from here  -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">INDIA</strong>
+              <h3 class="mb-0">VAISHNO DEVI </h3>
+              <div class="mb-1 text-muted">11 MARCH 2015</div>
+              <p class="mb-auto">Vaishno Devi (also known as Mata Rani, Trikuta, Ambe and Vaishnavi) is a folk manifestation of the Hindu Mother Goddess. It is said that Bhaironath, a famous Tantric, saw the young Vaishno Devi at an agricultural fair and fell madly in love with her. Vaishno Devi fled into Trikuta hills to escape his amorous advances, later she assumed the form of Mahakali and cut off his head with her sword in a cave.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/VAISHNO DEVI/sharad-acharya-ZVfclRaj7Y4-unsplash.jpg" class="bd-placeholder-img" width="200" height="400">
+            
+    
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- review of the fourth end here  -->
+
+
+    <!-- review of the fifth place start from here  -->
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">INDIA</strong>
+              <h3 class="mb-0">IMAMBARA</h3>
+              <div class="mb-1 text-muted"> 12 AUG 2021</div>
+              <p class="card-text mb-auto">Bara Imambara, also known as Asfi Imambara is an imambara complex in Lucknow, India built by Asaf-ud-Daula, Nawab of Awadh in 1784. Bara Construction of Bara Imambara was started in 1780, a year of a devastating famine, and one of Asaf-ud-Daula's objectives in embarking on this grandiose project was to provide employment for people in the region for almost a decade while the famine lasted. It is said that ordinary people used to work in the day building up the edifice, while noblemen and other elite worked at night to break down anything that was raised that day. </p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/LUCKNOW/ayan-ahmad-Vdsj32StrCk-unsplash.jpg" class="bd-placeholder-img" width="200" height="300">
+               
+            </div>
+          </div>
+        </div>
+
+        <!-- review of the fifth place end here  -->
+<!-- 
+
+        review of the 6 place start from here 
+
+
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">NEPAL</strong>
+              <h3 class="mb-0">ANNAPURNA</h3>
+              <div class="mb-1 text-muted"> 11 DEC 2015</div>
+              <p class="mb-auto">Annapurna  is a mountain situated in the Annapurna mountain range of Gandaki Province, north-central Nepal. It is the tenth highest mountain in the world at 8,091 metres (26,545 ft) above sea level and is well known for the difficulty and danger involved in its ascent.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/NEPAL/giuseppe-mondi-xyE1p1rG04U-unsplash.jpg" class="bd-placeholder-img" width="200" height="400">
+            
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- review of the 6 place end here  -->
+<!-- 
+
+
+        </div>
+    <div class="container my-4">
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">World</strong>
+              <h3 class="mb-0">Featured post</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/images/kyran-low-MvkLKGtBcUA-unsplash.jpg" class="bd-placeholder-img" width="200" height="250">
+            <title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+    
+            </div>
+          </div>
+        </div>
+
+        
+
+
+    
+    
+    
+    
+    
+    
+      -->    
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
